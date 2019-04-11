@@ -1,4 +1,4 @@
-FROM node:8.15-alpine
+FROM node:8.11.1
 RUN dpkg --add-architecture i386 && apt-get update && apt-get install build-essential -y
 
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
